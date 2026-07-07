@@ -1,5 +1,5 @@
 # Crosshair and custom Cursor
-A small simple practice for custim cursors or crosshairs.
+A small simple practice for custom cursors or crosshairs.
 
 
 ## Authors
