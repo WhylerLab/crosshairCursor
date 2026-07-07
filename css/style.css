@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: gainsboro;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.playground {
+    display: flex;
+    width: 960px;
+    height: 540px;
+    background: slategray;
+}
+
+.otherCursor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    cursor: url('/assets/images/otherCursor.png'), auto;
+}
+
+.crosshair {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    cursor: url('/assets/images/crosshair.png') 4 4, auto; /*4 4 pixel top left for click area*/
+    background: lightslategray;
+}
+
+.otherCursor button {
+    cursor: url('/assets/images/otherCursor.png'), auto;
+}
+
+.crosshair button {
+    cursor: url('/assets/images/crosshair.png') 4 4, auto; 
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+button::after {
+    content: "Target";
+}
+
+button:hover::after {
+    content: "Completed!";
+}
+
+button:hover {
+    background: greenyellow;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+h3 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    opacity: .75;
+}
