@@ -14,8 +14,9 @@ zone.addEventListener('mouseleave', () => {
 
 // track x/y coordinates from the cursor and transforms the style to the maching px from the pig
 // NICE TO KNOW translate3d uses the GPU for rendering, save this info for later
+//nevermind css will-change: transform; <- better way & official switch back to translate (2D)
 zone.addEventListener('mousemove', e => {
     const x = e.clientX;
     const y = e.clientY;
-    pig.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    pig.style.transform = `translate(${x}px, ${y}px)`;
 })
