@@ -27,6 +27,7 @@ body {
     pointer-events: none;
     width: 32px;
     top: 0; left: 0;
+    will-change: transform;
 }
 
 .otherCursor{
@@ -46,7 +47,7 @@ body {
     align-items: center;
     width: 50%;
     height: 100%;
-    cursor: url('assets/images/crosshair.png') 4 4, auto; /*4 4 pixel top left for click area*/
+    cursor: url('/assets/images/crosshair.png') 4 4, auto; /*4 4 pixel top left for click area*/
     background: lightslategray;
 }
 
@@ -55,7 +56,7 @@ body {
 }
 
 .crosshair button {
-    cursor: url('assets/images/crosshair.png') 4 4, auto;
+    cursor: url('/assets/images/crosshair.png') 4 4, auto;
 }
 
 button {
