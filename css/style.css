@@ -21,6 +21,14 @@ body {
     background: slategray;
 }
 
+.pigcursor {
+    display: none;
+    position: fixed;
+    pointer-events: none;
+    width: 32px;
+    top: 0; left: 0;
+}
+
 .otherCursor{
     position: relative;
     display: flex;
@@ -28,7 +36,7 @@ body {
     align-items: center;
     width: 50%;
     height: 100%;
-    cursor: url('/assets/images/otherCursor.png'), auto;
+    cursor: none;
 }
 
 .crosshair {
@@ -43,7 +51,7 @@ body {
 }
 
 .otherCursor button {
-    cursor: url('/assets/images/otherCursor.png'), auto;
+    cursor: none;
 }
 
 .crosshair button {
